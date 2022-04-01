@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import GetStarted from "./GetStarted";
 import Login from "./components/Authentication/Login";
 import Register from "./components/Authentication/Register";
+import Navbar from "./components/Navbar/Navbar.js";
 
 function App() {
   return (
