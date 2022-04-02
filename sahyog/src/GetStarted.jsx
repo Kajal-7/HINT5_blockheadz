@@ -24,40 +24,42 @@ function GetStarted() {
           </button>
         </div>
         <div className="p2">
-          <h1>Lorem Ipsum</h1>
+          <h1 style={{ color: "#f7e681" }}>About Us</h1>
           <h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            SAHYOG is an initiative which provides you a platform where you can
+            find and post various volunteering opportunities. You can find
+            something interesting to do in your spare time as well as helping
+            others at the same time. You'll always smile after your volunteering
+            job :)
           </h4>
         </div>
-          <Link to={"/login"}>
-            <button
-              type="button"
-              class="btn btn-primary btn-lg flow-btns"
-              style={{
-                marginRight: "20px",
-                borderColor: "#24a0ed",
-                marginLeft: "100px",
-              }}
-            >
-              Login
-            </button>
-          </Link>
-          <Link to={"/register"}>
-            <button
-              type="button"
-              class="btn btn-outline-primary btn-lg flow-btns"
-              style={{ marginLeft: "20px" }}
-            >
-              Register
-            </button>
-          </Link>
-        <img src={together} alt="tgt" style={{width: "50%", marginTop:"10px", display:"block"}} ></img>
+        <Link to={"/login"}>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg flow-btns"
+            style={{
+              marginRight: "20px",
+              borderColor: "#24a0ed",
+              marginLeft: "150px",
+            }}
+          >
+            Login
+          </button>
+        </Link>
+        <Link to={"/register"}>
+          <button
+            type="button"
+            class="btn btn-outline-primary btn-lg flow-btns"
+            style={{ marginLeft: "20px" }}
+          >
+            Register
+          </button>
+        </Link>
+        <img
+          src={together}
+          alt="tgt"
+          style={{ width: "50%", marginTop: "10px", display: "block" }}
+        ></img>
       </div>
       <div className="mid-part">
         <br></br>
@@ -67,14 +69,15 @@ function GetStarted() {
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading" style={{ marginTop: "50px" }}>
-              First featurette heading.{" "}
-              <span class="text-muted">It'll blow your mind.</span>
+              Our Earth. <span class="text-muted">It'll blow your mind.</span>
             </h2>
             <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
+              Volunteer in various environment opportunities which are iclinded
+              towards making our world a better place.
+              <br></br>
+              #teamtrees
+              <br></br>
+              #teamseas
             </p>
           </div>
           <div class="col-md-5">
@@ -94,14 +97,12 @@ function GetStarted() {
               class="featurette-heading"
               style={{ marginLeft: "0px", marginTop: "30px" }}
             >
-              Oh yeah, it's that good.{" "}
-              <span class="text-muted">See for yourself.</span>
+              What you do of that surplus?{" "}
+              <span class="text-muted">Something.</span>
             </h2>
             <p class="lead" style={{ marginLeft: "0px" }}>
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
+              Reduce wastage and provide usable items that you don't need
+              anymore to the needy.
             </p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -118,13 +119,13 @@ function GetStarted() {
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">
-              And lastly, this one. <span class="text-muted">Checkmate.</span>
+              School is fun! <span class="text-muted">How?</span>
             </h2>
             <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
+              School children must be highly encouraged to do volunteering as it
+              develops team building and teamwork. The kindness and enthusiasm
+              these kids have is just so much that even a part of it is enough
+              for this.
             </p>
           </div>
           <div class="col-md-5">
@@ -138,9 +139,7 @@ function GetStarted() {
 
         {/* <hr class="featurette-divider"></hr> */}
       </div>
-      <div className="bot-part">
-
-      </div>
+      <div className="bot-part"></div>
     </div>
   );
 }
