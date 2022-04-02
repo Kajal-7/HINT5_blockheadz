@@ -20,9 +20,13 @@ const RecruitVolunteers = () => {
             
                 <div class="container px-5" id="place1">
                 
-                    <img class="img-fluid rounded-circle" id="img4" src={search} alt="..." />
-              <Link to="/form"><button id="form2">Form</button></Link>  
+                    <img  id="img4" src={search}  />
+
+                <p  id="line">Click the button to let us know  more about your organisation<i  id="laugh" class="fa-solid fa-face-smile"/></p>
                
+                <div class="col-md" >
+              <Link to="/form"><div id="button1"> <button type="button" id="form2" class="btn btn-warning" style={{marginLeft:"2rem"}} >CLICK ME</button></div></Link>  
+              </div>
              
                 {/* <Form/> */}
                   

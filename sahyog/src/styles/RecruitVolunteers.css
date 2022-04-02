@@ -703,10 +703,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 #img4{
   margin-top:0;
- 
-  height:430px;
+  margin-right: 0;
+  margin-left: 30rem;
+
+  height:400px;
   /* margin-left: 800px; */
-    width:auto;
+    width:490px;
     display:flex;
     /* border:2px solid; */
     /* border-color: rgba(214, 158, 158, 0.267) ; */
@@ -741,4 +743,39 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
   margin-left:0.8rem;
   margin-top: 0.2rem;
+}
+
+#button1{
+    align-items: right;
+}
+
+#form2{
+
+    height: 60px;
+    width: 180px;
+    font-size:30px;
+    font-family: 'Domine', serif;
+    color:rgba(0,1,45,1);
+    padding:0.25rem;
+    font-weight: bold;
+    
+    
+}
+
+#form2:hover{
+
+    background-color:rgba(0,1,45,1);
+    color:#FEBE10;
+    transition:0.1s;
+    font-weight: bold;
+}
+.text-right{
+
+    align-items: right;
+}
+#line{
+    font-family: 'Domine', serif;
+    color:#FEBE10;
+    font-size:25px;
+
 }
