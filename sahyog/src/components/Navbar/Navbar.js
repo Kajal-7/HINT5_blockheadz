@@ -40,26 +40,28 @@ const Navbar = () => {
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="col">
-              <Link to="/find-opp" style={{textDecoration: "none"}}>
+              <Link to="/find-opp" style={{ textDecoration: "none" }}>
                 <li class="nav-item" className="navitem">
                   Find an Opportunity
                 </li>
               </Link>
-              <Link to="/recruit-volunteers" style={{textDecoration: "none"}}>
+              <Link to="/recruit-volunteers" style={{ textDecoration: "none" }}>
                 <li class="nav-item" className="navitem">
                   Recruit Volunteers
                 </li>
               </Link>
-              
-              <li class="nav-item" className="navitem">
-                FAQs
-              </li>
-              
+
+              <Link to="/faq" style={{ textDecoration: "none" }}>
+                <li class="nav-item" className="navitem">
+                  FAQs
+                </li>
+              </Link>
+
               <li class="nav-item" className="navitem">
                 Profile
               </li>
 
-              <Link to="/donate" style={{textDecoration: "none"}}>
+              <Link to="/donate" style={{ textDecoration: "none" }}>
                 <li class="nav-item" className="navitem">
                   Donate
                 </li>

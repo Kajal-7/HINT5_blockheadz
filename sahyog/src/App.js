@@ -8,7 +8,7 @@ import RecruitVolunteers from "./RecruitVolunteers";
 import FindOpp from "./FindOpp";
 import Home from "./Home";
 import Donate from "./Donate";
-
+import Queries from "./Queries";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
           <Route path="/donate" element={<Donate/>} />
           <Route path="/find-opp" element={<FindOpp/>} />
           <Route path="/recruit-volunteers" element={<RecruitVolunteers/>} />
+          <Route path="/faq" element={<Queries/>} />
         </Routes>
       </Router>
       }/>

@@ -1,0 +1,19 @@
+.accordion,
+.accordion-item {
+  background-color: white;
+}
+
+.accordion-button,
+.accordion-collapse {
+  background-color: #97c1c896 ;
+  /* color: #3e3e3e !important; */
+  color: black;
+  margin: 0 auto ;
+  width: 80% ;
+  border-radius: 5px ;
+}
+
+.accordion-collapse {
+  margin-bottom: 20px ;
+  background-color: #56669d96 ;
+}
