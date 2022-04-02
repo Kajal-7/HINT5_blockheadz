@@ -7,6 +7,7 @@ import Register from "./components/Authentication/Register";
 import RecruitVolunteers from "./RecruitVolunteers";
 import FindOpp from "./FindOpp";
 import Home from "./Home";
+import Form from "./components/Form/Form.js";
 import Donate from "./Donate";
 import Queries from "./Queries";
 
@@ -24,6 +25,8 @@ function App() {
           <Route path="/find-opp" element={<FindOpp/>} />
           <Route path="/recruit-volunteers" element={<RecruitVolunteers/>} />
           <Route path="/faq" element={<Queries/>} />
+          <Route path="/form" element={<Form/>} />
+        
         </Routes>
       </Router>
       }/>

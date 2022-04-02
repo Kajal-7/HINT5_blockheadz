@@ -1,5 +1,6 @@
 import React from 'react'
 import "./styles/RecruitVolunteers.css";
+import { Link } from "react-router-dom";
 import  Navbar from "./components/Navbar/Navbar.js"
 import puzzle from "./assets/puzzle.jpg";
 import we from "./assets/we.jpg";
