@@ -5,7 +5,6 @@ import CardContent from "@mui/material/CardContent";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import EventAvailableOutlinedIcon from "@mui/icons-material/EventAvailableOutlined";
-import PaidOutlinedIcon from "@mui/icons-material/PaidOutlined";
 import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
