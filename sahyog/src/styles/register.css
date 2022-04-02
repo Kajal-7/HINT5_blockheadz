@@ -45,7 +45,8 @@ body {
     height: 50px;
     background-color: #1c1e21;
     text-indent: 24px;
-    font-size: 15px
+    font-size: 15px;
+    color: #fff;
 }
 
 .form-control:focus {
