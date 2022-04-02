@@ -7,7 +7,7 @@ export default function Register() {
   const [pass, setpass] = useState();
   const [fullName, setFullName] = useState();
   const [error, setError] = useState();
-  const { signUp } = useAuthContext();
+  const { signUp,userAdd } = useAuthContext();
   const navigate =useNavigate();
 
   const handleSubmit = async (e) => {
@@ -15,7 +15,10 @@ export default function Register() {
     e.preventDefault();
 
     try {
-      await signUp(email, pass);
+      await signUp(email, pass)
+      .then((value)=>{
+        userAdd(email,fullName,value);
+      });
       navigate("/login");
     } catch (error) {
       setError(error.message);

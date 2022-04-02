@@ -30,10 +30,26 @@ export function Authentication({child}){
         return signInWithEmailAndPassword(auth,email,password);
     }
 
-
+    function userAdd(email,name,value){
+       
+        const uid = value.user.uid;
+        const val=0;
+        const data = {
+            id : uid,
+            email: email,
+            name : name,
+            OpportunitiesPosted: val,
+            }; 
+        //adding a document with doc id as uid
+        async function storeUserData(){
+            const newUser = doc(db, 'users', uid)
+            await setDoc(newUser, data);
+          }
+          storeUserData();
+    }
     return (
         //value contains all the values you wanna expose
-        <AuthContext.Provider value={{ user,signUp, signIn}}>
+        <AuthContext.Provider value={{ user,userAdd, signUp, signIn}}>
             {child}
         </AuthContext.Provider>
     )
