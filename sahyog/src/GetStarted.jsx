@@ -152,10 +152,13 @@ function GetStarted() {
             ></img>
           </div>
         </div>
+        <footer class="py-5" id="footer">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Sahyog</p></div>
+        </footer>
 
         {/* <hr class="featurette-divider"></hr> */}
       </div>
-      <div className="bot-part"></div>
+      {/* <div className="bot-part"></div> */}
     </div>
   );
           }
