@@ -5,7 +5,8 @@ import puzzle from "./assets/puzzle.jpg";
 import we from "./assets/we.jpg";
 import collab from "./assets/collab.jpg";
 import recruit from "./assets/recruit.png";
-import search from "./assets/search.png"
+import search from "./assets/search.png";
+import Form from "./components/Form/Form.js"
 const RecruitVolunteers = () => {
   return (
     
@@ -17,8 +18,12 @@ const RecruitVolunteers = () => {
             <div class="masthead-content">
             
                 <div class="container px-5" id="place1">
-                   
-                <img class="img-fluid rounded-circle" id="img4" src={search} alt="..." />
+                
+                    <img class="img-fluid rounded-circle" id="img4" src={search} alt="..." />
+              <Link to="/form"><button id="form2">Form</button></Link>  
+               
+             
+                {/* <Form/> */}
                   
                 </div>
             </div>
