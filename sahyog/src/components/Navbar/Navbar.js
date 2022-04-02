@@ -57,15 +57,18 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              <li class="nav-item" className="navitem">
-                Profile
-              </li>
+           
 
               <Link to="/donate" style={{ textDecoration: "none" }}>
-                <li class="nav-item" className="navitem">
+                <li class="nav-item" className="navitem" id="last">
                   Donate
                 </li>
               </Link>
+
+              <li><button><i class="fa fa-sign-out" aria-hidden="true"></i></button></li>
+
+              
+             
             </ul>
           </div>
         </div>
