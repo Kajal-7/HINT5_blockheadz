@@ -57,7 +57,7 @@ const RecruitVolunteers = () => {
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading " id="steps">Follow these simple steps<i  id="laugh" class="fa-solid fa-face-laugh"/></h2>
+                    <h2 class="section-heading " id="steps">Follow these simple steps</h2>
                     <br></br>
                     {/* <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> */}
                 </div>
