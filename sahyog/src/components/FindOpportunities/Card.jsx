@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -8,11 +8,28 @@ import EventAvailableOutlinedIcon from "@mui/icons-material/EventAvailableOutlin
 import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import data from "./data";
+// import data from "./data";
 
+import {db} from "../../data/firebase";
+import { collection, getDocs } from "firebase/firestore";
 export default function CardSnippet() {
-  const [arr, setarray] = useState(data);
-
+  const [arr, setarray] = useState([]);
+  const colRef=collection(db,'Opportunities');
+  useEffect(()=>{
+  
+    getDocs(colRef)
+                  .then((snapshot)=>{
+                    snapshot.docs.forEach((doc)=>{
+                      
+                      setarray(oldArray => [...oldArray,{...doc.data(),id: doc.id} ]);
+                    })
+                  
+                  })
+                  .catch(err=>{
+                    console.log(err.message);
+                  })
+                  
+  },[])
   return (
     <div style={{ margin: "2.5rem" }}>
       <Grid container spacing={5}>
