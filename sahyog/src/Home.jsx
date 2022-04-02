@@ -20,7 +20,15 @@ function Home() {
             SAHYOG is an initiative which provides you a platform where you can
             find and post various volunteering opportunities. You can find
             something interesting to do in your spare time as well as helping
-            others at the same time. You can also provide monetary help to various organisations. You'll always smile after helping someone :)
+            others at the same time. You can also provide monetary help to
+            various organisations. You'll always smile after helping someone :)
+            <br></br>
+            Giving back and assisting others is the basis of community service
+            or volunteering. Thus, it teaches us how significant it is to help
+            the ones in need, the ones who are less fortunate than us. The
+            importance of community service lies in the fact that it connects us
+            to the community by improving it, and making it a better place for
+            all of us to live in.
           </p>
         </div>
         <div class="col-md-5">
