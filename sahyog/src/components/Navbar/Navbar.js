@@ -56,11 +56,13 @@ const Navbar = () => {
                 </a>
               </li>
 
-              <li class="nav-item" className="navitem">
-                <a class="nav-link" href="#">
-                  Donate
-                </a>
-              </li>
+              <Link to="/donate">
+                <li class="nav-item" className="navitem">
+                  <a class="nav-link" href="#">
+                    Donate
+                  </a>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>

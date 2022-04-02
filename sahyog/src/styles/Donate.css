@@ -1,0 +1,16 @@
+.parent{
+    text-align: center;
+}
+.child{
+    display: inline-block;
+
+    vertical-align: middle;
+    width: 50%;
+}
+.text p{
+   margin-top: 100px;
+}
+.pay{
+    margin-top: 40px;
+    margin-left: 100px;
+}
