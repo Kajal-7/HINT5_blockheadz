@@ -5,7 +5,7 @@ import GetStarted from "./GetStarted";
 import Login from "./components/Authentication/Login";
 import Register from "./components/Authentication/Register";
 import Home from "./Home"
-
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<GetStarted />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register/>} />
-          <Route path="/home" element={<Home/>} />
+          <Route path="/home" element={<PrivateRoute child={<Home/>}></PrivateRoute>} />
         </Routes>
       </Router>
       }/>
