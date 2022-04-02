@@ -11,19 +11,21 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import data from "./data";
 
-
 export default function CardSnippet() {
   const [arr, setarray] = useState(data);
- 
+
   return (
-    <div style={{margin: "2.5rem"}}>
-    
+    <div style={{ margin: "2.5rem" }}>
       <Grid container spacing={5}>
         {arr.map((item) => {
           return (
             <Grid item xs={12} sm={12} md={6} lg={4}>
               <Box sx={{ minWidth: 275 }}>
-                <Card className="job-card txt" variant="outlined" style={{backgroundColor: "#8FA1DE"}}>
+                <Card
+                  className="job-card txt"
+                  variant="outlined"
+                  style={{ backgroundColor: "#8FA1DE" }}
+                >
                   <CardContent>
                     <Typography
                       className="name"
@@ -32,18 +34,7 @@ export default function CardSnippet() {
                       component="div"
                     >
                       <div className="row">
-                        <div className="col-9">
-                          {item.jobName} -{" "}
-                          <span className="jobtype">{item.type}</span>
-                        </div>
-                        
-                      </div>
-                    </Typography>
-                    <Typography>
-                      <div className="d-flex title">
-                        {item.title}
-                        &nbsp;&nbsp;&nbsp;
-                        
+                        <div className="col-9">{item.organisationName}</div>
                       </div>
                     </Typography>
 
@@ -62,10 +53,16 @@ export default function CardSnippet() {
                       >
                         <div className="tag" style={{ display: "inline-flex" }}>
                           <PhoneInTalkOutlinedIcon />
-                          {item.PhoneNo}
+                          {item.phoneNo}
                         </div>
                       </div>
                     </div>
+                    <Typography>
+                      <div className="d-flex title">
+                      &nbsp;
+                        {item.des}                        
+                      </div>
+                    </Typography>
                     <div
                       className="text-center info mt-5"
                       style={{ display: "inline-block" }}
@@ -73,17 +70,7 @@ export default function CardSnippet() {
                       <div className="tag" style={{ display: "inline-flex" }}>
                         <EventAvailableOutlinedIcon /> Duration
                       </div>
-                      <div className="value">{item.Duration}</div>
-                    </div>
-                    <div
-                      className="info text-center"
-                      style={{ display: "inline-block" }}
-                    >
-                      <div className="tag" style={{ display: "inline-flex" }}>
-                        <PaidOutlinedIcon />
-                        Stipend
-                      </div>
-                      <div className="value">{item.Salary}</div>
+                      <div className="value">{item.duration}</div>
                     </div>
                     <div
                       className="info text-center"
@@ -91,9 +78,9 @@ export default function CardSnippet() {
                     >
                       <div className="tag" style={{ display: "inline-flex" }}>
                         <AccessTimeRoundedIcon />
-                        Apply by
+                        Deadline
                       </div>
-                      <div className="value">{item.Deadline}</div>
+                      <div className="value">{item.deadline}</div>
                     </div>
                   </CardContent>
                 </Card>
