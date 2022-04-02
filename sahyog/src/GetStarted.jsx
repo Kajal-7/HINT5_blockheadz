@@ -21,7 +21,9 @@ function GetStarted() {
                 style={{
                   height: "60px",
                   width: "90px",
+                  
                   marginRight: "2rem",
+                  marginLeft: "100px",
                   marginBottom: "0.5rem",
                 }}
               ></img>
@@ -156,6 +158,6 @@ function GetStarted() {
       <div className="bot-part"></div>
     </div>
   );
-}
+          }
 
 export default GetStarted;
