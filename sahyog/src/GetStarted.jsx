@@ -5,6 +5,7 @@ import together from "./assets/holding_hands.png";
 import feature1 from "./assets/feature1.png";
 import feature2 from "./assets/feature2.png";
 import feature3 from "./assets/feature3.png";
+import logo from "./assets/logo.png";
 import "./styles/Carousel.css";
 
 function GetStarted() {
@@ -12,6 +13,19 @@ function GetStarted() {
     <div>
       <div className="top-part">
         <div className="p1">
+        <span>
+              <img
+                src={logo}
+                alt="tgt "
+                id="mylogo"
+                style={{
+                  height: "60px",
+                  width: "90px",
+                  marginRight: "2rem",
+                  marginBottom: "0.5rem",
+                }}
+              ></img>
+            </span>
           <button
             type="button"
             class="btn btn-outline-primary btn-lg gs-btns"
