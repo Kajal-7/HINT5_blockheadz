@@ -7,6 +7,7 @@ import we from "./assets/we.jpg";
 import collab from "./assets/collab.jpg";
 import recruit from "./assets/recruit.png";
 import search from "./assets/search.png";
+import rec from "./assets/rec.png";
 import Form from "./components/Form/Form.js"
 const RecruitVolunteers = () => {
   return (
@@ -20,12 +21,12 @@ const RecruitVolunteers = () => {
             
                 <div class="container px-5" id="place1">
                 
-                    <img  id="img4" src={search}  />
+                    <img  id="img4" src={rec}  />
 
-                <p  id="line">Click the button to let us know  more about your organisation<i  id="laugh" class="fa-solid fa-face-smile"/></p>
+                <p  id="line">Create your opportunity to find volunteers for it !</p>
                
                 <div class="col-md" >
-              <Link to="/form"><div id="button1"> <button type="button" id="form2" class="btn btn-warning" style={{marginLeft:"2rem"}} >CLICK ME</button></div></Link>  
+              <Link to="/form"><div id="button1"> <button type="button" id="form2" class="btn btn-warning" style={{marginLeft:"2rem"}} >Post Here</button></div></Link>  
               </div>
              
                 {/* <Form/> */}
