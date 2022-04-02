@@ -1,3 +1,7 @@
+
+.lead{
+    color: rgba(0,1,45,1);
+}
 .parent{
     text-align: center;
 }
@@ -13,4 +17,7 @@
 .pay{
     margin-top: 40px;
     margin-left: 100px;
+}
+.navbar{
+    padding-bottom: 0rem;
 }

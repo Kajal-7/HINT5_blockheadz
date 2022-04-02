@@ -2,17 +2,19 @@ import React from "react";
 import "./styles/GetStarted.css";
 import GooglePayButton from '@google-pay/button-react';
 import donationpic from "./assets/donationpic.png";
+import donate from "./assets/donate.png";
 import "./styles/Carousel.css";
 import "./styles/Home.css";
 import "./styles/Donate.css";
+
 
 import Navbar from "./components/Navbar/Navbar";
 
 function Donate() {
     return (
-        <div>
+        <div id="main">
             <Navbar />
-            <div class="row featurette">
+            <div class="row featurette" id="back">
                 <div class="col-md-7">
                     <div class = 'text'>
                         <p class="lead">
@@ -83,9 +85,9 @@ function Donate() {
                 <div class="col-md-5" >
                     <img
                         class="featurette-image img-fluid mx-auto"
-                        src={donationpic}
+                        src={donate}
                         alt="Generic placeholder"
-                        style={{ height: "100%", width: "80%", marginTop: "40px"}}
+                        style={{ height: "80%", width: "100%", marginTop: "40px"}}
                     ></img>
                 </div>
             </div>
