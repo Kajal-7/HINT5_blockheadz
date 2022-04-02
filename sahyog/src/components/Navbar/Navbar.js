@@ -11,7 +11,10 @@ const Navbar = () => {
           {/* <a class="navbar-brand" href="#" className="fmargin">Sahyog</a> */}
           <Link to="/home">
             <span>
-              <img src={logo} alt="tgt image"></img>
+              <img src={logo} alt="tgt " style={{height:"60px",
+    width:"90px",
+    marginRight:"2rem",
+    marginBottom: "0.5rem",}}></img>
             </span>
             
           </Link>

@@ -88,12 +88,7 @@
     display: flex;
     justify-content: flex-end;
 } */
-image{
-    height:60px;
-    width:90px;
-    margin-right:2rem;
-    margin-bottom: 0.5rem;
-}
+
 
 .fmargin{
     margin-left:3px;
