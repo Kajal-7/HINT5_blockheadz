@@ -34,6 +34,7 @@ function GetStarted() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </h4>
+        </div>
           <Link to={"/login"}>
             <button
               type="button"
@@ -56,8 +57,7 @@ function GetStarted() {
               Register
             </button>
           </Link>
-          <img src={together} alt="tgt img"></img>
-        </div>
+        <img src={together} alt="tgt" style={{width: "50%", marginTop:"10px", display:"block"}} ></img>
       </div>
       <div className="mid-part">
         <br></br>
@@ -79,7 +79,7 @@ function GetStarted() {
           </div>
           <div class="col-md-5">
             <img
-              class="featurette-image img-fluid mx-auto"
+              class="featurette-image img-fluid mx-auto image"
               src={feature1}
               alt="Generic placeholder"
             ></img>
@@ -106,7 +106,7 @@ function GetStarted() {
           </div>
           <div class="col-md-5 order-md-1">
             <img
-              class="featurette-image img-fluid mx-auto"
+              class="featurette-image img-fluid mx-auto image"
               src={feature2}
               alt="Generic placeholder"
             ></img>
@@ -129,7 +129,7 @@ function GetStarted() {
           </div>
           <div class="col-md-5">
             <img
-              class="featurette-image img-fluid mx-auto"
+              class="featurette-image img-fluid mx-auto image"
               src={feature3}
               alt="Generic placeholder"
             ></img>
