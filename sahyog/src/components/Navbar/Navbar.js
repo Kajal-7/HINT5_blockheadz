@@ -1,9 +1,24 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React,{useState} from "react";
+import { Link ,useNavigate} from "react-router-dom";
 import "./navbar.css";
 import logo from "../../assets/logo.png";
-
+import { useAuthContext } from "../../data/auth";
 const Navbar = () => {
+  const {logout}=useAuthContext();
+  const [error,setError]=useState("");
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+   
+    setError("");
+    try {
+      await logout();
+      navigate("/");
+    } catch (error) {
+      console.log("Error logout" + error.message);
+      setError("Failed to logout");
+    }
+  };
   return (
     <div>
       <nav class="navbar navbar-expand-lg">
@@ -65,10 +80,8 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              <li><button><i class="fa fa-sign-out" aria-hidden="true"></i></button></li>
-
-              
-             
+              <li><button class="myb" onClick={handleLogout}><i class="fa fa-sign-out" aria-hidden="true"></i></button></li>              
+              {error && <div>{error.message}</div>}
             </ul>
           </div>
         </div>

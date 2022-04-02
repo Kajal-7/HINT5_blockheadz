@@ -4,12 +4,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
-import EventAvailableOutlinedIcon from "@mui/icons-material/EventAvailableOutlined";
 import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-// import data from "./data";
 
+import "./Card.css"
 import {db} from "../../data/firebase";
 import { collection, getDocs } from "firebase/firestore";
 export default function CardSnippet() {
@@ -38,9 +37,9 @@ export default function CardSnippet() {
             <Grid item xs={12} sm={12} md={6} lg={4}>
               <Box sx={{ minWidth: 275 }}>
                 <Card
-                  className="job-card txt"
+                  className="opp-card txt"
                   variant="outlined"
-                  style={{ backgroundColor: "#8FA1DE" }}
+                   style={{backgroundColor: "#6bdcd5" }}
                 >
                   <CardContent>
                     <Typography
@@ -60,7 +59,7 @@ export default function CardSnippet() {
                         style={{ display: "inline-block" }}
                       >
                         <div className="tag" style={{ display: "inline-flex" }}>
-                          <LocationOnOutlinedIcon /> {item.location}
+                          <LocationOnOutlinedIcon /> {item.location} &nbsp;&nbsp;&nbsp;&nbsp;
                         </div>
                       </div>
                       <div
@@ -73,28 +72,20 @@ export default function CardSnippet() {
                         </div>
                       </div>
                     </div>
+                   
                     <Typography>
-                      <div className="d-flex title">
-                      &nbsp;
+                      <div >
                         {item.des}                        
                       </div>
                     </Typography>
-                    <div
-                      className="text-center info mt-5"
-                      style={{ display: "inline-block" }}
-                    >
-                      <div className="tag" style={{ display: "inline-flex" }}>
-                        <EventAvailableOutlinedIcon /> Duration
-                      </div>
-                      <div className="value">{item.duration}</div>
-                    </div>
+                    
                     <div
                       className="info text-center"
-                      style={{ display: "inline-block" }}
+                      style={{ display: "inline-flex" }}
                     >
                       <div className="tag" style={{ display: "inline-flex" }}>
                         <AccessTimeRoundedIcon />
-                        Deadline
+                        Deadline: &nbsp;
                       </div>
                       <div className="value">{item.deadline}</div>
                     </div>

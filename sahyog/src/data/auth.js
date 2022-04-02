@@ -29,7 +29,10 @@ export function Authentication({child}){
     function signIn(email,password){
         return signInWithEmailAndPassword(auth,email,password);
     }
-
+     
+    function logout(){
+        return signOut(auth)
+     }
     function userAdd(email,name,value){
        
         const uid = value.user.uid;
@@ -49,7 +52,7 @@ export function Authentication({child}){
     }
     return (
         //value contains all the values you wanna expose
-        <AuthContext.Provider value={{ user,userAdd, signUp, signIn}}>
+        <AuthContext.Provider value={{ user,userAdd, signUp, signIn,logout}}>
             {child}
         </AuthContext.Provider>
     )
