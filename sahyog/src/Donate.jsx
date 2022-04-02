@@ -14,7 +14,7 @@ function Donate() {
     return (
         <div id="main">
             <Navbar />
-            <div class="row featurette" id="back">
+            <div class="row featurette" id="back" style={{backgroundColor: "white"}}>
                 <div class="col-md-7">
                     <div class = 'text'>
                         <p class="lead">

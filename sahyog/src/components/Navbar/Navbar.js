@@ -8,15 +8,19 @@ const Navbar = () => {
     <div>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          {/* <a class="navbar-brand" href="#" className="fmargin">Sahyog</a> */}
           <Link to="/home">
             <span>
-              <img src={logo} alt="tgt " style={{height:"60px",
-    width:"90px",
-    marginRight:"2rem",
-    marginBottom: "0.5rem",}}></img>
+              <img
+                src={logo}
+                alt="tgt "
+                style={{
+                  height: "60px",
+                  width: "90px",
+                  marginRight: "2rem",
+                  marginBottom: "0.5rem",
+                }}
+              ></img>
             </span>
-            
           </Link>
           <span className="fmargin">SAHYOG</span>
 
@@ -29,8 +33,6 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            {/* <span class="navbar-toggler-icon"></span> */}
-
             <span class="toggler-icon top-bar"></span>
             <span class="toggler-icon middle-bar"></span>
             <span class="toggler-icon bottom-bar"></span>
@@ -38,32 +40,28 @@ const Navbar = () => {
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="col">
-              <li class="nav-item" className="navitem">
-                <a class="nav-link" href="#" color="#FEBE10">
+              <Link to="/find-opp" style={{textDecoration: "none"}}>
+                <li class="nav-item" className="navitem">
                   Find an Opportunity
-                </a>
-              </li>
-              <li class="nav-item" className="navitem">
-                <a class="nav-link" href="#">
+                </li>
+              </Link>
+              <Link to="/recruit-volunteers" style={{textDecoration: "none"}}>
+                <li class="nav-item" className="navitem">
                   Recruit Volunteers
-                </a>
-              </li>
+                </li>
+              </Link>
+              
               <li class="nav-item" className="navitem">
-                <a class="nav-link" href="#">
-                  FAQs
-                </a>
+                FAQs
               </li>
+              
               <li class="nav-item" className="navitem">
-                <a class="nav-link" href="#">
-                  Profile
-                </a>
+                Profile
               </li>
 
-              <Link to="/donate">
+              <Link to="/donate" style={{textDecoration: "none"}}>
                 <li class="nav-item" className="navitem">
-                  <a class="nav-link" href="#">
-                    Donate
-                  </a>
+                  Donate
                 </li>
               </Link>
             </ul>

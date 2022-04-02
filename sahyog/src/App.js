@@ -5,7 +5,7 @@ import GetStarted from "./GetStarted";
 import Login from "./components/Authentication/Login";
 import Register from "./components/Authentication/Register";
 import RecruitVolunteers from "./RecruitVolunteers";
-
+import FindOpp from "./FindOpp";
 import Home from "./Home";
 import Donate from "./Donate";
 
@@ -21,6 +21,8 @@ function App() {
           <Route path="/register" element={<Register/>} />
           <Route path="/home" element={<Home/>} />
           <Route path="/donate" element={<Donate/>} />
+          <Route path="/find-opp" element={<FindOpp/>} />
+          <Route path="/recruit-volunteers" element={<RecruitVolunteers/>} />
         </Routes>
       </Router>
       }/>
