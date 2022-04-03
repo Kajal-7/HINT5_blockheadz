@@ -10,6 +10,7 @@ import Home from "./Home";
 import Form from "./components/Form/Form.js";
 import Donate from "./Donate";
 import Queries from "./Queries";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -20,12 +21,12 @@ function App() {
           <Route path="/" element={<GetStarted />} />
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register/>} />
-          <Route path="/home" element={<Home/>} />
-          <Route path="/donate" element={<Donate/>} />
-          <Route path="/find-opp" element={<FindOpp/>} />
-          <Route path="/recruit-volunteers" element={<RecruitVolunteers/>} />
-          <Route path="/faq" element={<Queries/>} />
-          <Route path="/form" element={<Form/>} />
+          <Route path="/home" element={ <PrivateRoute child={<Home />}></PrivateRoute> } />
+          <Route path="/donate" element={ <PrivateRoute child={<Donate />}></PrivateRoute> }/>
+          <Route path="/find-opp" element={ <PrivateRoute child={<FindOpp />}></PrivateRoute> } />
+          <Route path="/recruit-volunteers" element={ <PrivateRoute child={<RecruitVolunteers />}></PrivateRoute> }/>
+          <Route path="/faq"element={ <PrivateRoute child={<Queries/>}></PrivateRoute> } />
+          <Route path="/form" element={ <PrivateRoute child={<Form />}></PrivateRoute> } />
         
         </Routes>
       </Router>
