@@ -10,6 +10,7 @@ import {
   updateDoc,
   getDoc
 } from "firebase/firestore";
+import Alert from "@mui/material/Alert";
 const Form = () => {
 
   const { user } = useAuthContext();
@@ -72,6 +73,7 @@ const Form = () => {
       <div class="container contact" id="form">
         <div class="row" id="form1">
           <div class="col-md-3">
+          {success && <Alert severity="success">Opportunity succesfully posted</Alert>}
             <div class="contact-info">
               <img
                 id="env"
